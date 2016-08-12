@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blogpost>
+  <id>2</id>
+  <time>2016-07-26</time>
+  <title>Test Post Again</title>
+  <data>
+    <![CDATA[
+    This is ANOTHER test <b>blog post</b>
+    ]]>
+  </data>
+  <author>Jeff Demanche</author>
+</blogpost>

@@ -1,0 +1,266 @@
+::selection {
+    background-color: #999;
+}
+h1 {
+    color: white;
+    font-family: 'IM Fell English', serif;
+    font-size: 24pt;
+    text-shadow: 0px 0px 5px black;
+}
+h2 {
+    color: white;
+    opacity: 0.7;
+    font-family: 'IM Fell English', serif;
+    font-size: 18pt;
+    text-shadow: 0px 0px 3px black;
+}
+body {
+    margin: 0px 0px 0px 0px;
+    color: white;
+    background-color: black;
+    font-family: 'IM Fell English', serif;
+    font-size: 13pt;
+    text-shadow: 0px 0px 3px black;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+#blog_link {
+    position: relative;
+    left: 110px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 24pt;
+}
+#blog_link:hover {
+    color: #888;
+}
+.surrounding_windows {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+.back_arrow {
+    z-index: 2;
+    opacity: 0.3;
+    position: absolute;
+}
+.back_arrow:hover {
+    opacity: 0.5;
+}
+#window_up {
+    top: -100%;
+}
+#window_down {
+    top: 100%;
+}
+#window_right {
+    top: 0%;
+    left: 100%;
+}
+#window_left {
+    top: 0%;
+    left: -100%;
+}
+.occ_cell {
+    text-align: center;
+    font-weight: bold;
+}
+.mobile_cell_header {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    display: none;
+}
+.banner {
+    font-family: 'Merriweather', serif;
+    padding: 4px;
+    position: relative;
+    border-radius: 6px 6px 6px 0;
+    width: 72%;
+    left: 20%;
+    height: 10px;
+    cursor: pointer;
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
+    opacity: 0.8;
+    overflow: hidden;
+    text-align: left;
+    font-size: 12pt;
+    padding: 0px;
+}
+.banner_background {
+    z-index: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
+    position: absolute;
+}
+.banner_background:hover {
+    opacity: 0.3;
+}
+.banner_content {
+    width: 300px;
+    background-color: transparent !important;
+}
+.banner_content span {
+    line-height: 80%;
+    font-family: 'Amatic SC', cursive;
+}
+.banner:hover {
+    width: 90%;
+    overflow-y: hidden;
+}
+.banner img{
+    position: absolute;
+    top: 0px;
+    max-width: 97%;
+}
+.banner_coverer:hover .triangle_down_left {
+    opacity: 1.0;
+}
+.banner_coverer:hover .banner{
+    opacity: 1.0;
+}
+.triangle_down_left {
+    width: 0;
+    height: 0;
+    margin-left: 20%;
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: 60px;
+    border-right-width: 60px;
+    border-color: #41412A transparent transparent transparent;
+    opacity: 0.8;
+    background-color: transparent !important;
+}
+#web_designer_banner div {
+    background-color: #8C0B30;
+    border-top-color: #8C0B30;
+}
+#animator_banner div {
+    background-color: #9C410D;
+    border-top-color: #9C410D;
+}
+#photographer_banner div {
+    background-color: #27146C;
+    border-top-color: #27146C;
+}
+#musician_banner div {
+    background-color: #430F69;
+    border-top-color: #430F69;
+}
+#name_cell {
+    text-align: right;
+    width: 25%;
+}
+#general_info_cell {
+    text-align: left;
+}
+#home_page_body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Changes after intro animation. */
+    overflow: hidden;
+}
+#section_links {
+    position: absolute;
+    text-align: center;
+    table-layout: fixed;
+    width: 30%;
+    left: 35%;
+    top: 110%;
+}
+#background_image {
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url("../content/background/photo-providence-small.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#personal_info {
+    position: absolute;
+    width: 30%;
+    left: 41%;
+    bottom: 50%;
+    text-align: center;
+}
+@keyframes loadSeparator {
+    0% {
+        -ms-transform: scale(0.25, 0); /* IE 9 */
+        -webkit-transform: scale(0.25, 0); /* Safari */
+        transform: scale(0.25, 0);
+    }
+    100% {
+        -ms-transform: scale(0.25, 1); /* IE 9 */
+        -webkit-transform: scale(0.25, 1); /* Safari */
+        transform: scale(0.25, 1);
+    }
+}
+#separator {
+    font-size: 100pt;
+    font-weight: lighter;
+    -ms-transform: scale(0.25, 1); /* IE 9 */
+    -webkit-transform: scale(0.25, 1); /* Safari */
+    transform: scale(0.25, 1);
+    animation-name: loadSeparator;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+@media screen and (max-width: 1140px) {
+    #personal_info {
+        width: 95%;
+        left: 2%;
+        top: 100px;
+    }
+    #header_info_table {
+        width: 100%;
+        left: 0%;
+    }
+    #section_links {
+        top: 330px !important;
+    }
+    #section_links td {
+        display: block;
+    }
+    #table_row_content {
+        display: block;
+    }
+    #table_row_titles {
+        display: none;
+    }
+    .triangle_down_left {
+        display: none;
+    }
+    .mobile_cell_header {
+        display: block;
+    }
+    .banner_coverer {
+        left: 10%;
+        width: 80%;
+    }
+    .banner {
+        left: 0%;
+        width: 100%;
+        height: 200px !important;
+        border-radius: 0;
+    }
+    .banner:hover {
+        width: 110% !important;
+    }
+}
